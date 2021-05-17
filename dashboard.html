@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Cloud - Interactive Associates">
+    <title>Knack</title>
+
+    <!-- Required External CSS -->
+    <link href="assets/lib/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="assets/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="assets/lib/jqvmap/jqvmap.min.css" rel="stylesheet">
+
+    <link href="assets/lib/prismjs/themes/prism-vs.css" rel="stylesheet">
+    <link href="assets/lib/datatables.net-dt/css/jquery.dataTables.min.css" rel="stylesheet">
+    <link href="assets/lib/datatables.net-responsive-dt/css/responsive.dataTables.min.css" rel="stylesheet">
+    <link href="assets/lib/select2/css/select2.min.css" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo.svg">
+
+    <!-- DashForge CSS -->
+    <link rel="stylesheet" href="assets/css/dashforge.css"> 
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link href="assets/css/purecss-circular-progress-bar progress-pur-master/css-circular-prog-bar.css" media="all" rel="stylesheet">
+    
+
+    <!-- Page CSS --> 
+    
+    <link rel="stylesheet" href="assets/css/progress.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+  </head>
+  <body>
+
+    <aside class="aside aside-fixed">
+      <div class="aside-header">
+        <a href="dashboard.html" class="aside-logo">
+          <div class="">
+            <img src="./assets/img/logo.svg" class="img-fluid logoo" alt="" srcset="">
+          </div>
+        </a>
+        <a href="" class="aside-menu-link">
+          <i data-feather="menu"></i>
+          <i data-feather="x"></i>
+        </a>
+      </div>
+      <div class="aside-body">
+        
+        <ul class="nav nav-aside">
+          <!-- <li class="nav-label">Dashboard</li> -->
+          <li class="nav-item" >
+
+          <li class="nav-item active"><a href="dashboard.html" class="nav-link"><i data-feather="bar-chart-2"></i> <span class="marine-active-menu">Dashboard</span></a></li>
+          <li class="nav-item"><a href="/" class="nav-link"><i data-feather="archive"></i><span>Sessions</span></a></li>
+          <li class="nav-item"><a href="/" class="nav-link"><i class="fa fa-handshake mr-3"></i><span>Mentors</span></a></li>
+          <li class="nav-item"><a href="/" class="nav-link"><i class="fas fa-money-bill mr-3"></i><span>Billing</span></a></li>
+          
+          
+        </ul>
+        <!-- <div class="col-lg-6 col-12 mg-x-auto">
+            Switch Button
+            <label class="switch mg-t-50">
+              <input type="checkbox" checked>
+              <span class="slider round"></span>
+            </label>
+        </div> -->
+              
+      </div>
+    </aside>
+
+    <div class="content ht-100v pd-0">
+      <div class="content-header shadow-dash bd-b-0">
+        <div class="content-search">
+          <i data-feather="search"></i>
+          <input type="search" class="form-control" placeholder="Search...">
+        </div>
+        <nav class="nav">
+          <a href="" class="nav-link"><i data-feather="aperture"></i></a>
+          <div class="dropdown dropdown-message ml-md-4 ml-2 mg-t-5">
+            <a href="" class="dropdown-link new-indicator" data-toggle="dropdown">
+              <i data-feather="message-circle"></i>
+              <span>5</span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right">
+              <div class="dropdown-header">New Messages</div>
+              <a href="" class="dropdown-item">
+                <div class="media">
+                  <div class="avatar avatar-sm avatar-online"><img src="../https://via.placeholder.com/350" class="rounded-circle" alt=""></div>
+                  <div class="media-body mg-l-15">
+                    <strong>Socrates Itumay</strong>
+                    <p>nam libero tempore cum so...</p>
+                    <span>Mar 15 12:32pm</span>
+                  </div>
+                </div>
+              </a>
+              <a href="" class="dropdown-item">
+                <div class="media">
+                  <div class="avatar avatar-sm avatar-online"><img src="../https://via.placeholder.com/500" class="rounded-circle" alt=""></div>
+                  <div class="media-body mg-l-15">
+                    <strong>Joyce Chua</strong>
+                    <p>on the other hand we denounce...</p>
+                    <span>Mar 13 04:16am</span>
+                  </div>
+                </div>
+              </a>
+              <div class="dropdown-footer"><a href="">View all Messages</a></div>
+            </div>
+          </div>
+
+          <div class="dropdown dropdown-notification ml-md-4 ml-2 mg-t-5">
+            <a href="" class="dropdown-link new-indicator" data-toggle="dropdown">
+              <i data-feather="bell"></i>
+              <span>2</span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right">
+              <div class="dropdown-header">Notifications</div>
+              <a href="" class="dropdown-item">
+                <div class="media">
+                  <div class="avatar avatar-sm avatar-online"><img src="../https://via.placeholder.com/350" class="rounded-circle" alt=""></div>
+                  <div class="media-body mg-l-15">
+                    <p>Congratulate <strong>Socrates Itumay</strong> for work anniversaries</p>
+                    <span>Mar 15 12:32pm</span>
+                  </div>
+                </div>
+              </a>
+              
+              <a href="" class="dropdown-item">
+                <div class="media">
+                  <div class="avatar avatar-sm avatar-online"><img src="../https://via.placeholder.com/500" class="rounded-circle" alt=""></div>
+                  <div class="media-body mg-l-15">
+                    <p><strong>Adrian Monino</strong> added new comment on your photo</p>
+                    <span>Mar 12 10:40pm</span>
+                  </div>
+                </div>
+              </a>
+              <div class="dropdown-footer"><a href="">View all Notifications</a></div>
+            </div><!-- dropdown-menu -->
+          </div>
+
+          <div class="dropdown dropdown-profile ml-md-4 ml-2">
+            <a href="" class="dropdown-link" data-toggle="dropdown" data-display="static">
+              <div class="avatar avatar-sm"><img src="https://via.placeholder.com/500" class="rounded-circle" alt=""></div>
+            </a><!-- dropdown-link -->
+            <div class="dropdown-menu dropdown-menu-right tx-13">
+              <div class="avatar avatar-lg mg-b-15"><img src="https://via.placeholder.com/500" class="rounded-circle" alt=""></div>
+              <h6 class="tx-semibold mg-b-5">Katherine Pechon</h6>
+              <p class="mg-b-25 tx-12 tx-color-03">Administrator</p>
+  
+              <a href="" class="dropdown-item"><i data-feather="edit-3"></i> Edit Profile</a>
+              <a href="page-profile-view.html" class="dropdown-item"><i data-feather="user"></i> View Profile</a>
+              <div class="dropdown-divider"></div>
+              <a href="page-help-center.html" class="dropdown-item"><i data-feather="help-circle"></i> Help Center</a>
+              <a href="" class="dropdown-item"><i data-feather="life-buoy"></i> Forum</a>
+              <a href="" class="dropdown-item"><i data-feather="settings"></i>Account Settings</a>
+              <a href="" class="dropdown-item"><i data-feather="settings"></i>Privacy Settings</a>
+              <a href="page-signin.html" class="dropdown-item"><i data-feather="log-out"></i>Sign Out</a>
+            </div><!-- dropdown-menu -->
+          </div>
+        </nav>
+        
+      </div><!-- content-header -->
+
+      <div class="content-body">
+        <div class="container pd-x-0">
+         
+          <div class="row">
+            <div class="col-lg-9 col-md-8 col-xl-9 col-12">
+              <h3 class="mg-b-0 tx-spacing--1 white">Summary</h3>
+            </div>
+            
+          </div>
+          <div class="row mg-t-10">
+          <div class="col-md-6 col-lg-3 col-12 mt-2">
+              <div class="card card-body pd-15 card-height">
+                <div class="d-flex justify-content-between">
+                  <p class=" col-7 mb-0 tx-14 pd-x-5 tx-gray tx-medium">Registered Members</p>
+                  <h3 class="mb-0">43</h3>
+                </div>
+              </div>
+          </div>
+          <div class="col-md-6 col-lg-3 col-12 mt-2">
+            <div class="card card-body pd-15 card-height">
+              <div class="d-flex justify-content-between">
+                <p class=" col-7 mb-0 tx-14 pd-x-5 tx-gray tx-medium">Company Coaches</p>
+                <h3 class="mb-0">38</h3>
+              </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-3 col-12 mt-2">
+          <div class="card card-body pd-15 card-height">
+            <div class="d-flex justify-content-between">
+              <p class=" col-7 mb-0 tx-14 pd-x-5 tx-gray tx-medium">Completed Session <br><span class="tx-10"> (This month/ Total) </span></p>
+              <h3 class="mb-0">1/7</h3>
+            </div>
+          </div>
+      </div>
+      <div class="col-md-6 col-lg-3 col-12 mt-2">
+        <div class="card card-body pd-15 card-height">
+          <div class="d-flex justify-content-between">
+            <p class=" col-7 mb-0 tx-14 pd-x-5 tx-gray tx-medium">Time spent on mentoring</p>
+            <h3 class="mb-0">13.1 hrs</h3>
+          </div>
+        </div>
+    </div>
+
+        </div>
+          <div class="row row-xs">
+
+          <div class="col-lg-12 col-xl-12 mg-t-10">
+            <div class="row row-xs">
+             
+              <div class="col-12 col-lg-6 mg-t-30">
+                <div class="card card-height">
+                  <div class="card-body pd-20">
+                    <div class="mg-t-10 mg-md-t-0">
+                      <p class="tx-18 tx-bold mg-b-0 pd-t-5">Coaching Seesion Timeline</p>
+                      <p class="tx-gray mb-1">How satisfied are people at ACME with the 1:1 coaching session</p>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-3">
+                        <div class="d-inline-block pos-relative pd-t-20">
+                          <span class="peity-donut" data-peity='{ "fill": ["#1E40E6","#e5e9f2"], "height": 120, "width": 120, "innerRadius": 52}'>90,10</span>
+    
+                          <div class="pos-absolute a-0 d-flex flex-column align-items-center justify-content-center">
+                            <h3 class="tx-rubik tx-spacing--1 mg-b-0 pd-t-10">90%</h3>
+                            <span class="tx-10 tx-color-03">Satisfaction Score</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-9">
+                        <div class="mg-t-10">
+                          <label for="" class="tx-12 tx-gray mb-0">I felt heard, understood and respected</label>
+                          <div class="progress ht-10">
+                          <div class="progress-bar progress-pur wd-85p progress-bar progress-pur-striped progress-bar progress-pur-animated " role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">85%</div>
+                         </div>
+                        </div>
+                        <div class="mg-t-10">
+                          <label for="" class="tx-12 tx-gray mb-0">The session was a valuable use of my time</label>
+                          <div class="progress ht-10">
+                          <div class="progress-bar progress-pur wd-95p progress-bar progress-pur-striped progress-bar progress-pur-animated " role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">94%</div>
+                         </div>
+                        </div>
+                        <div class="mg-t-10">
+                          <label for="" class="tx-12 tx-gray mb-0">I gained useful insight or takeaway</label>
+                          <div class="progress ht-10">
+                          <div class="progress-bar progress-pur wd-95p progress-bar progress-pur-striped progress-bar progress-pur-animated " role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">95%</div>
+                         </div>
+                        </div>
+                        <div class="mg-t-10">
+                          <label for="" class="tx-12 tx-gray mb-0">I will put what I have discovered into practice</label>
+                          <div class="progress ht-10">
+                          <div class="progress-bar progress-pur wd-90p progress-bar progress-pur-striped progress-bar progress-pur-animated " role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">90%</div>
+                         </div>
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+
+              <div class="col-12 col-lg-6 mg-t-30">
+                <div class="card card-height">
+                  <div class="card-body pd-20">
+                  
+                    <div class="mg-t-10 mg-md-t-0">
+                      <p class="tx-18 tx-bold mg-b-0 pd-t-5">Team Coaching Satisfaction Score</p>
+                      <p class="tx-gray mb-1">How satisfied are people at ACME with the 1:1 the Team coaching session</p>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-3">
+                        <div class="d-inline-block pos-relative pd-md-t-20">
+                          <span class="peity-donut" data-peity='{ "fill": ["#1E40E6","#e5e9f2"], "height": 120, "width": 120, "innerRadius": 52 }'>98,2</span>
+    
+                          <div class="pos-absolute a-0 d-flex flex-column align-items-center justify-content-center">
+                            <h3 class="tx-rubik tx-spacing--1 mg-b-0 pd-t-10">99%</h3>
+                            <span class="tx-10 tx-color-03">Satisfaction Score</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-9">
+                        <div class="mg-t-10">
+                          <label for="" class="tx-12 tx-gray mb-0">I felt empowered to participate during the sessions</label>
+                          <div class="progress ht-10">
+                          <div class="progress-bar progress-pur wd-100p progress-bar progress-pur-striped progress-bar progress-pur-animated " role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">100%</div>
+                         </div>
+                        </div>
+                        <div class="mg-t-10">
+                          <label for="" class="tx-12 tx-gray mb-0">The session was well organized and facilitated</label>
+                          <div class="progress ht-10">
+                          <div class="progress-bar progress-pur wd-95p progress-bar progress-pur-striped progress-bar progress-pur-animated " role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">94%</div>
+                         </div>
+                        </div>
+                        <div class="mg-t-10">
+                          <label for="" class="tx-12 tx-gray mb-0">I gained useful insight or takeaway</label>
+                          <div class="progress ht-10">
+                          <div class="progress-bar progress-pur wd-95p progress-bar progress-pur-striped progress-bar progress-pur-animated " role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">95%</div>
+                         </div>
+                        </div>
+                        <div class="mg-t-10">
+                          <label for="" class="tx-12 tx-gray mb-0">I will put what I have discovered into practice</label>
+                          <div class="progress ht-10">
+                          <div class="progress-bar progress-pur wd-90p progress-bar progress-pur-striped progress-bar progress-pur-animated " role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">90%</div>
+                         </div>
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+              
+              <div class="col-md-12 col-lg-6 col-xl-6 mg-t-20 mg-md-t-30">
+                <div class="card card-height">
+                  
+                  <div class="card-body pd-20">
+                    <div class="mg-t-10 mg-md-t-0">
+                      <p class="tx-18 tx-bold mg-b-0 pd-t-5">Top 10 Coaching Topic</p>
+                      <p class="tx-gray">What people at ACME are discussing during coaching session by number of sessions</p>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-7 col-12">
+                        <div class="chart-container" style="position: relative; min-height:250px; width:100%">
+                          <canvas id="chartDonut2" class="chartDo"></canvas>
+                        </div>
+                      </div>
+                      <div class="col-md-5 col-12 mg-t-20">
+                        <div class="row mg-t-5">
+                          <div class="col-12">
+                            <div class="d-flex align-items-center">
+                              <div class="wd-10 ht-10 rounded-circle bg-conflict mg-r-5"></div>
+                              <p class="tx-normal tx-rubik mg-b-0 tx-12 tx-gray">Conflict Resolution</p>
+                            </div>
+                          </div>
+                          
+                        </div>
+                        <div class="row mg-t-5">
+                          <div class="col-12">
+                            <div class="d-flex align-items-center">
+                              <div class="wd-10 ht-10 rounded-circle bg-decision mg-r-5"></div>
+                              <p class="tx-normal tx-rubik mg-b-0 tx-12 tx-gray">Decision Making</p>
+                            </div>
+                          </div>
+                          
+                        </div>
+                        <div class="row mg-t-5">
+                          <div class="col-12">
+                            <div class="d-flex align-items-center">
+                              <div class="wd-10 ht-10 rounded-circle bg-feed mg-r-5"></div>
+                              <p class="tx-normal tx-rubik mg-b-0 tx-12 tx-gray">Feedback</p>
+                            </div>
+                          </div>
+                          
+                        </div><div class="row mg-t-5">
+                          <div class="col-12">
+                            <div class="d-flex align-items-center">
+                              <div class="wd-10 ht-10 rounded-circle bg-per mg-r-5"></div>
+                              <p class="tx-normal tx-rubik mg-b-0 tx-12 tx-gray">Perception</p>
+                            </div>
+                          </div>
+                          
+                        </div>
+                        <div class="row mg-t-5">
+                          <div class="col-12">
+                            <div class="d-flex align-items-center">
+                              <div class="wd-10 ht-10 rounded-circle bg-creative mg-r-5"></div>
+                              <p class="tx-normal tx-rubik mg-b-0 tx-12 tx-gray">Creativity and Originality</p>
+                            </div>
+                          </div>
+                          
+                        </div>
+                        <div class="row mg-t-5">
+                          <div class="col-12">
+                            <div class="d-flex align-items-center">
+                              <div class="wd-10 ht-10 rounded-circle bg-stra mg-r-5"></div>
+                              <p class="tx-normal tx-rubik mg-b-0 tx-12 tx-gray">Strategic Foresight</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row mg-t-5">
+                          <div class="col-12">
+                            <div class="d-flex align-items-center">
+                              <div class="wd-10 ht-10 rounded-circle bg-analy mg-r-5"></div>
+                              <p class="tx-normal tx-rubik mg-b-0 tx-12 tx-gray">Analytical Reasoning</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row mg-t-5">
+                          <div class="col-12">
+                            <div class="d-flex align-items-center">
+                              <div class="wd-10 ht-10 rounded-circle bg-diverse mg-r-5"></div>
+                              <p class="tx-normal tx-rubik mg-b-0 tx-12 tx-gray">Diversity</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row mg-t-5">
+                          <div class="col-12">
+                            <div class="d-flex align-items-center">
+                              <div class="wd-10 ht-10 rounded-circle bg-emotion mg-r-5"></div>
+                              <p class="tx-normal tx-rubik mg-b-0 tx-12 tx-gray">Emotional Awareness</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row mg-t-5">
+                          <div class="col-12">
+                            <div class="d-flex align-items-center">
+                              <div class="wd-10 ht-10 rounded-circle bg-agiltiy mg-r-5"></div>
+                              <p class="tx-normal tx-rubik mg-b-0 tx-12 tx-gray">Menatl Agility</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div><!-- card-body -->
+                  
+                </div><!-- card -->
+              </div>
+             
+
+              <div class="col-12 col-lg-6 mg-t-30">
+                <div class="card card-height">
+                  <div class="card-body pd-20">
+                    <div class="mg-t-10 mg-md-t-0">
+                      <p class="tx-18 tx-bold mg-b-0 pd-t-5">Coaching Seesion Timeline</p>
+                      <p class="tx-gray">Number of coaching sessions compared by</p>
+                    </div>
+                    <div data-label="Example" class="df-example">
+                      <div class="" style="position: relative; min-height:300px; width:100%">
+                        <canvas id="chartBar3"></canvas>
+                      </div>
+                    </div><!-- df-example -->
+                  </div>
+                </div>
+                
+              </div>
+
+              <div class="col-12 col-lg-6 mg-t-30">
+                <div class="card card-height">
+                  <div class="card-body pd-20">
+                  
+                    <div class="mg-t-10 mg-md-t-0">
+                      <p class="tx-18 tx-bold mg-b-0 pd-t-5">Recent Coaching Session</p>
+                      <p class="tx-gray mb-2">List of coaching session completed by ACME employees </p>
+                    </div>
+                    <div class="table-responsive">
+                      <table class="table table-striped">
+                        <thead>
+                          <tr>
+                            <th scope="col">Date</th>
+                            <th scope="col">Employee</th>
+                            <th scope="col">Type</th>
+                            <th scope="col">Status</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Feb 17</td>
+                            <td>Asma Ali</td>
+                            <td>Goal Setting</td>
+                            <td><span class="badge badge-success">Completed</span></td>
+                          </tr>
+                          <tr>
+                            <td>Mar 12</td>
+                            <td>Asma Ali</td>
+                            <td>1:1 session</td>
+                            <td><span class="badge badge-success">Completed</span></td>
+                          </tr>
+                          <tr>
+                            <td>April 12</td>
+                            <td>Asma Ali</td>
+                            <td>Team session</td>
+                            <td><span class="badge badge-success">Completed</span></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>     
+                  </div>
+                </div>
+                
+              </div>
+              
+              <div class="col-12 col-lg-6 mg-t-30">
+                <div class="card card-height">
+                  <div class="card-body pd-20">
+                  
+                    <div class="mg-t-10 mg-md-t-0">
+                      <p class="tx-18 tx-bold mg-b-0 pd-t-5">Employee Coaching Progress</p>
+                      <p class="tx-gray mb-2">List of coaching session completed by ACME employees </p>
+                    </div>
+                    <div class="table-responsive">
+                      <table class="table table-striped">
+                        <thead>
+                          <tr>
+                            <th scope="col">Employee</th>
+                            <th scope="col">Coach</th>
+                            <th scope="col">Progress</th>
+                            <th scope="col">Completion</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Feb 17</td>
+                            <td>Asma Ali</td>
+                            <td>
+                              <div class="progress ht-15">
+                              <div class="progress-bar progress-pur wd-25p" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                            </div>
+                          </td>
+                          <td>3 of 12</td>
+                          </tr>
+                          <tr>
+                            <td>Asma Ali</td>
+                            <td>Mark Wright</td>
+                            <td>
+                              <div class="progress ht-15">
+                              <div class="progress-bar progress-pur wd-75p" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">75%</div>
+                            </div>
+                          </td>
+                          <td>5 of 12</td>
+                          </tr>
+                          <tr>
+                            <td>April 12</td>
+                            <td>Asma Ali</td>
+                            <td>
+                              <div class="progress ht-15">
+                              <div class="progress-bar progress-pur wd-55p" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">55%</div>
+                            </div>
+                          </td>
+                            <td>
+                             9 of 12
+                          </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>     
+                  </div>
+                </div>
+                
+              </div>
+              
+              
+            </div>
+          </div><!-- row -->
+          
+          
+          <!--Home Modal -->
+            <div class="modal fade" id="homeModal" tabindex="-1" aria-labelledby="homeModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content pd-md-x-30 pd-x-20 pd-y-20">
+                  <div class="modal-header bd-b-0">
+                    <p class="tx-18 modal-title" id="homeModalLabel">Go back to home</p>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <p class="tx-16 tx-gray mb-0">Are you sure you want to leave this page?</p>
+                  </div>
+                  <div class="modal-footer bd-t-0">
+                    <a href="./home.html" type="button" class="btn btn-primary w-100">Continue</a>
+
+                    <button type="button" class="btn btn-outline-primary w-100" data-dismiss="modal">No, Thanks</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+        </div><!-- container -->
+      </div>
+    </div>
+
+    <script src="assets/lib/jquery/jquery.min.js"></script>
+    <script src="assets/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/lib/feather-icons/feather.min.js"></script>
+    <script src="assets/lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+
+    <script src="assets/lib/prismjs/prism.js"></script>
+    <script src="assets/lib/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="assets/lib/datatables.net-dt/js/dataTables.dataTables.min.js"></script>
+    <script src="assets/lib/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="assets/lib/datatables.net-responsive-dt/js/responsive.dataTables.min.js"></script>
+
+    <script src="assets/lib/chart.js/Chart1.min.js"></script>
+    <script src="assets/lib/chart.js/utils.js"></script>
+    <script src="assets/lib/peity/jquery.peity.min.js"></script>
+
+    <script src="assets/js/dashforge.js"></script>
+    <script src="assets/js/dashforge.aside.js"></script>
+    <script src="assets/js/dashforge.sampledata.js"></script>
+
+    <!-- append theme customizer -->
+    <script src="assets/lib/js-cookie/js.cookie.js"></script>
+    <script src="assets/js/dashforge.settings.js"></script>
+<script>
+   // Donut chart
+   $('.peity-donut').peity('donut');
+
+
+$.plot('#flotChart2', [{
+  data: df3,
+  color: '#0168fa',
+  curvedLines: { apply: true }
+}], {
+  series: {
+    shadowSize: 0,
+    lines: {
+      show: true,
+      lineWidth: 1.5,
+      fill: .05
+    }
+  },
+  grid: {
+    borderWidth: 0,
+    labelMargin: 0
+  },
+  yaxis: {
+    show: false,
+    max: 55
+  },
+  xaxis: {
+    show: true,
+    color: 'rgba(131,146,165,.08)',
+    min: 48,
+    max: 102,
+    tickSize: 5
+  }
+});
+</script>
+    <script>
+      $(function(){
+        var stackLabel = ['Aug 10', 'Aug 10', 'Aug 16', 'Aug 10', 'Aug 19', 'Sept 10'];
+        var stackData1 = [3, 2, 9, 5, 4,2];
+        // var stackData2 = [0, 5, 0, 30, 10,20,5];
+        // var stackData3 = [5, 5, 15, 10, 10,20,5];
+        // var stackColor1 = '#4847E0';
+        var stackColor1 = '#1E40E6';
+        // var stackColor3 = '#FF9196'
+        
+          /** PIE CHART 2 **/
+          var datapie2 = {
+            labels: ['Conflict Resolution','Decision Making', 'Feedback','Perception',  'Creativity & Originality','Strategic Foresight','Analytical Reasoning','Diversity & Inclusion','Emotional Awareness', 'Mental Adility' ],
+            datasets: [{
+              data: [5470,3340,1332,878,2345,3789,2345,1234,1674,2342],
+              backgroundColor: ['#1441EB', '#995BF5','#EA211E','#6C17F5','violet','#17e4eb','#BE2BF4','#3591E0','#DE8147','#1B6AaA'],
+              
+            }]
+          };
+  
+          var optionpie2 = {
+            maintainAspectRatio: false,
+            responsive: true,
+            legend: {
+              display: false,
+            },
+            animation: {
+              animateScale: true,
+              animateRotate: true
+            }
+          };
+  
+          // For a pie chart
+          var ctx2 = document.getElementById('chartDonut2');
+          var myDonutChart = new Chart(ctx2, {
+            type: 'pie',
+            data: datapie2,
+            cutoutPercentage: 10,
+            options: optionpie2
+          });
+
+          
+          /*=============================================
+           Stacked chart 
+           =======================*/
+
+          const barOptions_stacked = {
+          maintainAspectRatio: false,
+          showLines: true,
+          responsive: true,
+        
+          hover :{
+              animationDuration:0
+          },
+          scales: {
+              xAxes: [{
+                  ticks: {
+                      beginAtZero:true,
+                      fontSize:11
+                  },
+                  scaleLabel:{
+                      display:false
+                  },
+                  barPercentage: 0.5,
+                  borderRadius:20,
+                  gridLines: {
+                  }, 
+                  stacked: true
+              }],
+              yAxes: [{
+                  gridLines: {
+                      display:false,
+                      color: "#fff",
+                      zeroLineColor: "#fff",
+                      zeroLineWidth: 0
+                  },
+                  ticks: {
+                    fontSize: 14,
+                  },
+                  stacked: true
+              }],
+          },
+          legend:{
+              display:false
+          },
+      };
+
+      // Stacked chart
+ 
+    var ctx3 = document.getElementById('chartBar3').getContext('2d');
+    new Chart(ctx3, {
+    type: 'bar',
+    
+    data: {
+      labels: stackLabel,
+              datasets: [
+                {
+              //   data: stackData3,
+              //   backgroundColor: stackColor3
+              // },
+              // {
+                
+                data: stackData1,
+                backgroundColor: stackColor1
+              },
+              //  {
+              //   data: stackData2,
+              //   backgroundColor: stackColor2
+              // },
+              
+            ]
+        },
+
+    options: barOptions_stacked,
+          });
+      }) 
+
+      var myChartCircle = new Chart('chartProgress', {
+  type: 'doughnut',
+  data: {
+    datasets: [{
+      label: 'Africa / Population (millions)',
+      percent: 68,
+      backgroundColor: ['#5283ff']
+    }]
+  },
+  plugins: [{
+      beforeInit: (chart) => {
+        const dataset = chart.data.datasets[0];
+        chart.data.labels = [dataset.label];
+        dataset.data = [dataset.percent, 100 - dataset.percent];
+      }
+    },
+    {
+      beforeDraw: (chart) => {
+        var width = chart.chart.width,
+          height = chart.chart.height,
+          ctx = chart.chart.ctx;
+        ctx.restore();
+        var fontSize = (height / 150).toFixed(2);
+        ctx.font = fontSize + "em sans-serif";
+        ctx.fillStyle = "#9b9b9b";
+        ctx.textBaseline = "middle";
+        var text = chart.data.datasets[0].percent + "%",
+          textX = Math.round((width - ctx.measureText(text).width) / 2),
+          textY = height / 2;
+        ctx.fillText(text, textX, textY);
+        ctx.save();
+      }
+    }
+  ],
+  options: {
+    maintainAspectRatio: false,
+    cutoutPercentage: 85,
+    rotation: Math.PI / 2,
+    legend: {
+      display: false,
+    },
+    tooltips: {
+      filter: tooltipItem => tooltipItem.index == 0
+    }
+  }
+});
+     
+    </script>
+  </body>
+</html>
